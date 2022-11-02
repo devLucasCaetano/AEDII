@@ -5,9 +5,10 @@
 #include "ilist.h"
 #include "hashtable_ed.h"
 
-int main(int argc, char** argv){
-    
-    int n, m, i, chave;    
+int main(int argc, char **argv)
+{
+
+    int n, m, i, chave;
 
     int seed = 0;
 
@@ -16,18 +17,18 @@ int main(int argc, char** argv){
 
     srand(seed);
 
-    THED* ht;
+    THED *ht;
     ILIST *chaves = NULL;
     ht = THED_Criar(m, 10);
 
     // teste 1
 
-    // THED_Inserir(ht, 10, 5);
-    // THED_Imprimir(ht);
-    // THED_Inserir(ht, 11, 7);
-    // THED_Imprimir(ht);
-    // THED_Inserir(ht, 13, 0);
-    // THED_Imprimir(ht);
+    THED_Inserir(ht, 10, 5);
+    THED_Imprimir(ht);
+    THED_Inserir(ht, 11, 7);
+    THED_Imprimir(ht);
+    THED_Inserir(ht, 13, 0);
+    THED_Imprimir(ht);
 
     // ILIST *chaves = THED_Chaves(ht);
     // ILIST_Imprimir(chaves, 0);
